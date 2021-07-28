@@ -1,0 +1,51 @@
+.hero {
+  border: solid green 5px;
+  /* aquí he definido la altura , 100% de los pixeles establecidos en el header
+  y he añadido foto en background, centrandola , que no se repita y covered
+  flex column aplicado para centrarlo mas facilmente + tmb he hecho un flex al elemento hijo "hero__text"
+   */
+  height: 100%;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include flexColumnCentered;
+  text-align: center;
+  color: #ffffff;
+  &__text {
+    @include flexColumnCentered;
+    width: 50%;
+
+    &--title {
+      font-family: $second-font;
+      font-size: 42px;
+      font-weight: bold;
+
+      @media (min-width: 768px) {
+        font-size: 80px;
+      }
+      @media (min-width: 1200px) {
+        font-size: 100px;
+      }
+    }
+    &--description {
+      font-size: 16px;
+      @media (min-width: 768px) {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.icoScroll {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: white;
+  &__link {
+    text-align: center;
+  }
+}
+/* El botón de flecha del módulo
+ hero debe enlazar a la sección "3 Reasons To Purchase".*/
