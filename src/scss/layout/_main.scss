@@ -1,1 +1,32 @@
 /* establecer margin de 0 15 px */
+
+/* . En el hover de los botones ("Go" y "3 Reasons To Purchase") se debe incluir una transición que
+dejamos a vuestra elección (por ejemplo: color, tamaño, etc.). */
+
+/*  Looking through a window */
+.main {
+  margin: 0 15px;
+
+  &__section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    line-height: 30px;
+    &--small {
+      font-size: 14px;
+
+      color: #8ccbea;
+    }
+    &--title {
+      font-family: $second-font;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    &--description {
+      color: #4a4a4a;
+    }
+  }
+}

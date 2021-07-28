@@ -5,10 +5,14 @@
   flex column aplicado para centrarlo mas facilmente + tmb he hecho un flex al elemento hijo "hero__text"
    */
   height: 100%;
+  width: 100%;
   background-image: url("../images/cover.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  /* mirar esta line height */
+  line-height: 55px;
 
   @include flexColumnCentered;
   text-align: center;
@@ -16,7 +20,6 @@
   &__text {
     @include flexColumnCentered;
     width: 50%;
-
     &--title {
       font-family: $second-font;
       font-size: 42px;
@@ -43,9 +46,8 @@
   height: 45px;
   border-radius: 100%;
   background-color: white;
-  &__link {
-    text-align: center;
-  }
+  @include flexColumnCentered;
+  text-align: center;
 }
 /* El botón de flecha del módulo
  hero debe enlazar a la sección "3 Reasons To Purchase".*/
