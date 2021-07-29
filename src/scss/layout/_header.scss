@@ -22,7 +22,6 @@
 
 .header {
   height: 568px;
-  border: solid 5px red;
   @include flexColumnCentered;
   position: relative;
   &__nav {
