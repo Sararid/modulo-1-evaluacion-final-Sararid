@@ -1,13 +1,41 @@
 .icoArrow {
   width: 45px;
-  background-color: chartreuse;
+  background-color: $white;
   height: 45px;
   border-radius: 100%;
+  @include flexColumnCentered;
+  /*position: relative;
+  transform: translateY(-20px);*/
 }
 
 .footer {
   background-color: $dark-grey-blue;
   color: $white;
-
   @include flexColumnCentered;
+  padding-bottom: 45px;
+
+  &__nav {
+    list-style: none;
+    @include flexColumnCentered;
+    line-height: 30px;
+    padding: 15px 0;
+
+    &--link {
+      text-decoration: none;
+      color: $white;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+  }
+
+  &__copy {
+    @include flexColumnCentered;
+    font-size: 14px;
+    line-height: 30px;
+    padding-top: 15px;
+  }
+}
+
+.fas {
+  color: $bright-orange;
 }
