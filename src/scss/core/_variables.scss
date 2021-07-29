@@ -3,8 +3,13 @@ $main-font: "Roboto", sans-serif;
 
 $second-font: "Roboto Slab", serif;
 
-// mixins
+//colors
+$bright-orange: #f26002;
+$light-blue: #8ccbea;
+$cerulean: #0271bc;
+$dark-grey-blue: #304268;
 
+// mixins
 @mixin flexColumnCentered {
   display: flex;
   flex-direction: column;

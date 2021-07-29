@@ -27,7 +27,7 @@
   @include flexColumnCentered;
 
   &__nav {
-    background-color: #0271bc;
+    background-color: $dark-grey-blue;
     width: 44px;
     height: 44px;
     position: fixed;
