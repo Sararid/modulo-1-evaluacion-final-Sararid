@@ -25,9 +25,10 @@
   height: 568px;
   border: solid 5px red;
   @include flexColumnCentered;
+  position: relative;
 
   &__nav {
-    background-color: $dark-grey-blue;
+    background-color: $cerulean;
     width: 44px;
     height: 44px;
     position: fixed;

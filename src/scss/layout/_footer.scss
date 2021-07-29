@@ -4,8 +4,8 @@
   height: 45px;
   border-radius: 100%;
   @include flexColumnCentered;
-  /*position: relative;
-  transform: translateY(-20px);*/
+  position: relative;
+  transform: translateY(-20px);
 }
 
 .footer {

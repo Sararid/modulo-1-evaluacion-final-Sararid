@@ -20,6 +20,7 @@ dejamos a vuestra elección (por ejemplo: color, tamaño, etc.). */
     }
     @media (min-width: 1200px) {
       padding: 60px 0;
+      @include flexColumnCentered;
 
       /*  mirar aqui un flex */
     }
@@ -61,7 +62,6 @@ dejamos a vuestra elección (por ejemplo: color, tamaño, etc.). */
       background-color: white;
       color: $bright-orange;
       font-size: 20px;
-      font-weight: 500;
       @media (min-width: 768px) {
         width: 91px;
       }
