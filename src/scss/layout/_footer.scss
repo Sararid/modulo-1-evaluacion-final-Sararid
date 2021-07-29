@@ -1,6 +1,13 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
+.icoArrow {
+  width: 45px;
+  background-color: chartreuse;
+  height: 45px;
+  border-radius: 100%;
+}
+
+.footer {
+  background-color: $dark-grey-blue;
+  color: $white;
+
+  @include flexColumnCentered;
 }
