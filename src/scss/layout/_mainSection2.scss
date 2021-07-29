@@ -1,12 +1,11 @@
 /* . En el hover de los botones ("Go" y "3 Reasons To Purchase") se debe incluir una transición que
 dejamos a vuestra elección (por ejemplo: color, tamaño, etc.). */
 .main {
-  width: 100%;
   &__section2 {
     background-color: $ice-blue;
     line-height: 30px;
+    padding-bottom: 60px;
     display: grid;
-
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: repeat (5, 1fr);
     align-items: center;
