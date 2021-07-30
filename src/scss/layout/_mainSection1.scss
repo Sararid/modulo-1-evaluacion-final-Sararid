@@ -64,12 +64,27 @@ dejamos a vuestra elección (por ejemplo: color, tamaño, etc.). */
       background-color: white;
       color: $bright-orange;
       font-size: 20px;
+
       @media (min-width: 768px) {
         width: 91px;
       }
       @media (min-width: 1200px) {
         width: 160px;
       }
+    }
+  }
+}
+
+.button:hover {
+  background-color: white;
+  transition: color ease 2s;
+  &:hover {
+    background-color: gold;
+  }
+  @media (min-width: 768px) {
+    &:hover {
+      transition: transform 1s ease-in;
+      transform: scale(1.5);
     }
   }
 }

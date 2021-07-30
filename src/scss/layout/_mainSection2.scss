@@ -55,7 +55,7 @@ dejamos a vuestra elección (por ejemplo: color, tamaño, etc.). */
   }
 }
 
-#button {
+.buttonSection2 {
   width: 184px;
   height: 45px;
   font-size: 20px;
@@ -64,8 +64,13 @@ dejamos a vuestra elección (por ejemplo: color, tamaño, etc.). */
   color: white;
   text-align: center;
   line-height: 2.25;
+
   @media (min-width: 768px) {
     width: 210px;
+    transition: transform 2s ease-in-out;
+    &:hover {
+      transform: rotate(50deg);
+    }
   }
   @media (min-width: 1200px) {
     width: 255px;
